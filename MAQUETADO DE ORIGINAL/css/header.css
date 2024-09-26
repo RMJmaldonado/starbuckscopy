@@ -1,0 +1,89 @@
+/* Estilos para el Header */
+header {
+    background-color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eaeaea;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Logo */
+.logo {
+    width: 70px;
+    height: auto;
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    gap: 40px;
+    font-size: 16px;
+    align-items: center;
+}
+
+.nav-item {
+    font-weight: 700;
+    color: #000;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+    color: #555;
+}
+
+/* Sección derecha del header */
+.right-section {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: row; /* Aseguramos que los elementos se alineen horizontalmente */
+    flex-wrap: nowrap; /* Evitar que se alineen en columna */
+    justify-content: flex-end;
+}
+
+/* Icono de ubicación */
+.right-section span {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.right-section span::before {
+    content: url('../img/ubi.png'); /* Reemplaza con la ruta de tu icono */
+    display: inline-block;
+    margin-right: 8px;
+    width: 14px;
+    height: auto;
+}
+
+/* Botones en el header */
+.btn {
+    padding: 8px 16px;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: white;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    white-space: nowrap; /* Evitar que los botones se dividan en varias líneas */
+}
+
+.btn:hover {
+    background-color: #f7f7f7;
+}
+
+.btn.register {
+    background-color: black;
+    color: white;
+}
+
+.btn.register:hover {
+    background-color: #333;
+}
